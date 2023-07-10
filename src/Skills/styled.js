@@ -14,9 +14,13 @@ export const Wrapper = styled.div`
 	width: 100%;
 	background-color: ${({ theme }) => theme.color.white};
 	padding: 32px;
-	margin: 0 0 72px;
+	margin: 0 0 50px;
 	border-radius: 4px;
 	box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		margin: 0 0 72px;
+	}
 `
 
 export const Skill = styled.li`
