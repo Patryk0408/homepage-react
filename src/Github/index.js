@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Wrapper, Paragraph, GithubIcon, Title, Projects, Project, LinkToGh, Description, Name } from './styled'
-import Loader from '../Loader'
-// import Error from '../Error'
+import Loader from '../States/Loader'
+// import Error from '../States/Error'
 import { useApiGithub } from '../useApiGithub' // Importowanie własnego hooka
 
 const Github = () => {

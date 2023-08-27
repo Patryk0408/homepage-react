@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export const useApiGithub = currencyCode => {
+export const useApiGithub = () => {
 	const [githubProjects, setGithubProjects] = useState(null)
 
 	useEffect(() => {
@@ -15,7 +15,7 @@ export const useApiGithub = currencyCode => {
 		}
 
 		fetchData()
-	}, [currencyCode])
+	}, [])
 
 	return githubProjects
 }
