@@ -1,6 +1,6 @@
-import Tile from './Tile'
-import Skills from './Skills'
-import Github from './Github'
+import Tile from './Homepage/Tile'
+import Skills from './Homepage/Skills'
+import Github from './Homepage/Github'
 import { Container } from './styled'
 
 const App = () => {

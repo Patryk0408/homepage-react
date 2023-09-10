@@ -64,4 +64,12 @@ export const LinkToGh = styled.span`
 	gap: 8px;
 `
 
+export const LinkGh = styled.a`
+	color: ${({ theme }) => theme.color.cornflowerBlue};
+
+	&:visited {
+		color: ${({ theme }) => theme.color.cornflowerBlue};
+	}
+`
+
 export const Description = styled.span``

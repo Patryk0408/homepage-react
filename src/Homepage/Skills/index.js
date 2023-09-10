@@ -1,6 +1,6 @@
 import { Title, Wrapper, SkillsList, Skill } from './styled'
-import mySkills from '../my-skills.json'
-import whatNext from '../next-skills.json'
+import mySkills from '../../my-skills.json'
+import whatNext from '../../next-skills.json'
 import { ReactComponent as ListStyle } from '../img/Ellipse 31.svg'
 
 const Skills = ({ skillsTitle, skills }) => {
