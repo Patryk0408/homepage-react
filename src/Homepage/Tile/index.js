@@ -9,7 +9,7 @@ const Tile = ({ name }) => {
 			<Description>
 				<Span>This is</Span>
 				<Title>{name}</Title>
-				<Paragraph>👨🏻‍💻 I'm a passionate Frontend Developer in love with React.</Paragraph>
+				<Paragraph>👨🏻‍💻 I'm a passionate Web Developer in love with Java Script.</Paragraph>
 				<Link href='mailto:patryk.krwaczyk.it@gmail.com'>
 					<MailIcon />
 					Hire me

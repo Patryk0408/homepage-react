@@ -9,7 +9,8 @@ export const Wrapper = styled.div`
 
 export const Paragraph = styled.p`
 	font-size: 20px;
-	margin: 0;
+	margin: 0 0 24px;
+	text-align: center;
 `
 
 export const GithubIcon = styled(Icon)`
@@ -32,7 +33,7 @@ export const Projects = styled.div`
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 140%; /* 25.2px */
+	line-height: 140%;
 	letter-spacing: 0.9px;
 `
 
@@ -46,12 +47,16 @@ export const Project = styled.div`
 	background: var(--white, #fff);
 	box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
 	padding: 56px;
+	transition: transform 0.2s;
+
+	&:hover {
+		transform: scale(1.02);
+	}
 `
 
 export const Name = styled.span`
 	color: #0366d6;
-
-	/* H3 */
+	text-transform: capitalize;
 	font-family: Inter;
 	font-size: 24px;
 	font-style: normal;
