@@ -1,33 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Wrapper, Paragraph, GithubIcon, Title, Projects, Project, LinkToGh, Description, Name, LinkGh } from './styled'
 import Loader from '../States/Loader'
 import Error from '../States/Error'
-import { useApiGithub } from '../../useApiGithub'
+import { useApiGithub } from '../useApiGithub'
 
 const Github = () => {
-	const [isLoading, setIsLoading] = useState(true)
-	const [isError, setError] = useState(false)
-
-	const githubProjects = useApiGithub()
-	const myProjects = githubProjects
+	const { githubProjects, isLoading, error } = useApiGithub()
 
 	useEffect(() => {
-		const timeoutId = setTimeout(() => {
-			setIsLoading(false)
-		}, 2000)
-
-		return () => {
-			clearTimeout(timeoutId)
-		}
-	}, [])
-
-	useEffect(() => {
-		if (!isLoading && githubProjects) {
-			console.log('ste')
-		} else if (!isLoading && !githubProjects) {
-			setError(true)
-		}
-	}, [isLoading, githubProjects])
+		// ...
+		// Inna logika, jeśli jest potrzebna
+		// ...
+	}, [githubProjects])
 
 	return (
 		<Wrapper>
@@ -36,11 +20,11 @@ const Github = () => {
 			<Paragraph>My recent projects</Paragraph>
 			{isLoading ? (
 				<Loader />
-			) : isError ? (
+			) : error ? (
 				<Error />
 			) : (
 				<Projects>
-					{myProjects.map(project => (
+					{githubProjects.map(project => (
 						<Project key={project.id}>
 							<Name>{project.name}</Name>
 							<Description>{project.description}</Description>
