@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/homepage-react/static/css/main.073c9b0a.css",
-    "main.js": "/homepage-react/static/js/main.7def7d23.js",
+    "main.js": "/homepage-react/static/js/main.ec28d14b.js",
     "static/js/787.ed490093.chunk.js": "/homepage-react/static/js/787.ed490093.chunk.js",
-    "static/media/logo.svg": "/homepage-react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/patryk-k.jpg": "/homepage-react/static/media/patryk-k.2aa5e4dc50ef424d0a68.jpg",
     "index.html": "/homepage-react/index.html",
-    "main.073c9b0a.css.map": "/homepage-react/static/css/main.073c9b0a.css.map",
-    "main.7def7d23.js.map": "/homepage-react/static/js/main.7def7d23.js.map",
+    "static/media/mark-github.svg": "/homepage-react/static/media/mark-github.061b0c8a135fb1d07778cf216f6412bb.svg",
+    "static/media/Danger.svg": "/homepage-react/static/media/Danger.9c0e6ac0777a618b502b6f9779d7379e.svg",
+    "static/media/Message.svg": "/homepage-react/static/media/Message.a2a199c0ca8e4fce475622ee0ec5b0a9.svg",
+    "static/media/Ellipse 31.svg": "/homepage-react/static/media/Ellipse 31.68407598b5fb839af5aec77b06100eb5.svg",
+    "main.ec28d14b.js.map": "/homepage-react/static/js/main.ec28d14b.js.map",
     "787.ed490093.chunk.js.map": "/homepage-react/static/js/787.ed490093.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7def7d23.js"
+    "static/js/main.ec28d14b.js"
   ]
 }
