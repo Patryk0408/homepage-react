@@ -40,3 +40,13 @@ export const Mail = styled.a`
 	width: fit-content;
 `
 export const About = styled.span``
+
+export const SocialWrapper = styled.div`
+	display: flex;
+	gap: 24px;
+	margin: 40px 0 0;
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		margin: 56px 0 0;
+	}
+`
