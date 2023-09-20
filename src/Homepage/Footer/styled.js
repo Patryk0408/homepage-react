@@ -31,15 +31,31 @@ export const Talk = styled.span`
 export const Mail = styled.a`
 	color: ${({ theme }) => theme.color.mineShaft};
 	font-family: Inter;
-	font-size: 32px;
+	font-size: 18px;
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
 	letter-spacing: 1.6px;
 	text-decoration: none;
 	width: fit-content;
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		font-size: 32px;
+	}
 `
-export const About = styled.span``
+export const About = styled.span`
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.7px;
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		font-size: 18px;
+		line-height: 140%;
+	}
+`
 
 export const SocialWrapper = styled.div`
 	display: flex;
@@ -50,3 +66,5 @@ export const SocialWrapper = styled.div`
 		margin: 56px 0 0;
 	}
 `
+
+export const image = styled.div``

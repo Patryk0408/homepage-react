@@ -26,7 +26,7 @@ export const Projects = styled.div`
 	max-width: 1216px;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	gap: 32px;
 	color: var(--text-secondary, #6e7e91);
 	font-family: Inter;
@@ -35,12 +35,14 @@ export const Projects = styled.div`
 	font-weight: 400;
 	line-height: 140%;
 	letter-spacing: 0.9px;
+	@media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 `
 
 export const Project = styled.div`
 	display: grid;
 	height: 320px;
-	max-width: 592px;
 	width: 100%;
 	border-radius: 4px;
 	border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
@@ -51,6 +53,10 @@ export const Project = styled.div`
 
 	&:hover {
 		transform: scale(1.02);
+	}
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
+		max-width: 592px;
 	}
 `
 

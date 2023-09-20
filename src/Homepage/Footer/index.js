@@ -1,4 +1,11 @@
-import { Wrapper, Description, Talk, Mail, About, SocialWrapper } from './styled'
+import {
+	Wrapper,
+	Description,
+	Talk,
+	Mail,
+	About,
+	SocialWrapper, // Image
+} from './styled'
 import GitHubLogo from '../img/Githublogo.svg'
 import FacebookLogo from '../img/Facebook.svg'
 import LinkedInLogo from '../img/LinkedIN.svg'
@@ -16,10 +23,18 @@ const Footer = () => {
 				</About>
 			</Description>
 			<SocialWrapper>
-				<img src={GitHubLogo} alt='GitHub' />
-				<img src={FacebookLogo} alt='Facebook' />
-				<img src={LinkedInLogo} alt='LinkedIn' />
-				<img src={InstagramLogo} alt='Instagram' />
+				<a href='https://github.com/Patryk0408' target='_blank' rel='noreferrer'>
+					<img src={GitHubLogo} alt='GitHub' />
+				</a>
+				<a href='https://www.facebook.com/profile.php?id=100010225308738' target='_blank' rel='noreferrer'>
+					<img src={FacebookLogo} alt='Facebook' />
+				</a>
+				<a href='https://www.linkedin.com/in/patryk-krawczyk-b651b8260/' target='_blank' rel='noreferrer'>
+					<img src={LinkedInLogo} alt='LinkedIn' />
+				</a>
+				<a href='https://www.instagram.com/xpatryyysx/' target='_blank' rel='noreferrer'>
+					<img src={InstagramLogo} alt='Instagram' />
+				</a>
 			</SocialWrapper>
 		</Wrapper>
 	)
