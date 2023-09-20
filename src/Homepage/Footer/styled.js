@@ -12,6 +12,7 @@ export const Description = styled.div`
 	display: grid;
 	gap: 12px;
 	max-width: 670px;
+	word-break: break-all;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		gap: 24px;

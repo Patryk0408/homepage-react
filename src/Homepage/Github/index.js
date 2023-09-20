@@ -1,4 +1,16 @@
-import { Wrapper, Paragraph, GithubIcon, Title, Projects, Project, LinkToGh, Description, Name, LinkGh } from './styled'
+import {
+	Wrapper,
+	Paragraph,
+	GithubIcon,
+	Title,
+	Projects,
+	Project,
+	LinkToGh,
+	Description,
+	Name,
+	LinkGh,
+	Short,
+} from './styled'
 import Loader from '../States/Loader'
 import Error from '../States/Error'
 import { useApiGithub } from '../useApiGithub'
@@ -31,14 +43,14 @@ const Github = () => {
 							<Description>{project.description}</Description>
 							{project.homepage ? (
 								<LinkToGh>
-									Demo:{' '}
+									<Short>Demo:&nbsp;</Short>
 									<LinkGh href={project.homepage} target='_blank'>
 										{project.homepage}
 									</LinkGh>
 								</LinkToGh>
 							) : null}
 							<LinkToGh>
-								Code:{' '}
+								<Short>Code:&nbsp;</Short>
 								<LinkGh href={project.html_url} target='_blank'>
 									{project.html_url}
 								</LinkGh>
