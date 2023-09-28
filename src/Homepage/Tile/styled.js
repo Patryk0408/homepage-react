@@ -70,6 +70,10 @@ export const Link = styled.a`
 	border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
 	font-size: 18px;
 
+	&:focus {
+		box-shadow: -2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff, -2px 2px 0px 0px #8cc2ff, 2px -2px 0px 0px #8cc2ff;
+	}
+
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 20px;
 	}
