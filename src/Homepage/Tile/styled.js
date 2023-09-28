@@ -34,9 +34,14 @@ export const Description = styled.div`
 `
 
 export const Title = styled.h1`
-	margin: 10px 0 35px;
-	font-size: 38px;
+	margin: 8px 0 16px;
+	font-size: 22px;
 	font-weight: 900;
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		font-size: 38px;
+		margin: 10px 0 35px;
+	}
 `
 
 export const Paragraph = styled.p`
@@ -63,4 +68,9 @@ export const Link = styled.a`
 	gap: 16px;
 	border-radius: 4px;
 	border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
+	font-size: 18px;
+
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		font-size: 20px;
+	}
 `
