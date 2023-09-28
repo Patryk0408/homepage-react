@@ -69,6 +69,7 @@ export const Link = styled.a`
 	border-radius: 4px;
 	border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
 	font-size: 18px;
+	transition: box-shadow 0.2s;
 
 	&:focus {
 		box-shadow: -2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff, -2px 2px 0px 0px #8cc2ff, 2px -2px 0px 0px #8cc2ff;

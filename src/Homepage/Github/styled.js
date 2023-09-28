@@ -102,6 +102,9 @@ export const LinkToGh = styled.span`
 export const LinkGh = styled.a`
 	color: ${({ theme }) => theme.color.cornflowerBlue};
 	word-break: break-all;
+	&:focus {
+		color: var(--Main-blue-LM, #0366d6);
+	}
 	&:visited {
 		color: ${({ theme }) => theme.color.cornflowerBlue};
 	}

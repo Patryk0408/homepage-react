@@ -25,7 +25,7 @@ export const Talk = styled.span`
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 130%; /* 15.6px */
+	line-height: 130%;
 	text-transform: uppercase;
 `
 
@@ -39,6 +39,11 @@ export const Mail = styled.a`
 	letter-spacing: 1.6px;
 	text-decoration: none;
 	width: fit-content;
+	transition: color 0.2s;
+
+	&:hover {
+		color: var(--Main-blue-LM, #0366d6);
+	}
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 32px;
@@ -68,4 +73,8 @@ export const SocialWrapper = styled.div`
 	}
 `
 
-export const image = styled.div``
+export const Image = styled.img`
+	&:focus {
+		filter: invert(29%) sepia(62%) saturate(5563%) hue-rotate(202deg) brightness(90%) contrast(98%);
+	}
+`
