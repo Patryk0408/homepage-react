@@ -4,6 +4,7 @@ export const theme = {
 		cornflowerBlue: '#0366D6',
 		white: '#FFFFFF',
 		mineShaft: '#252525',
+		black: '#000000',
 	},
 	breakpoint: {
 		tablet: '767px',

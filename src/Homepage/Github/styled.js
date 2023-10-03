@@ -102,6 +102,7 @@ export const LinkToGh = styled.span`
 export const LinkGh = styled.a`
 	color: ${({ theme }) => theme.color.cornflowerBlue};
 	word-break: break-all;
+	margin-bottom: 8px;
 	&:focus {
 		color: var(--Main-blue-LM, #0366d6);
 	}
@@ -117,11 +118,14 @@ export const Description = styled.span`
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 0.7px;
+	word-break: break-word;
+	margin-bottom: 16px;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 18px;
 		line-height: 140%;
 		letter-spacing: 0.9px;
+		margin-bottom: 24px;
 	}
 `
 

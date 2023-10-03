@@ -79,3 +79,11 @@ export const Link = styled.a`
 		font-size: 20px;
 	}
 `
+
+export const ToggleButton = styled.button`
+	background-color: ${props => (props.darkMode ? 'black' : 'white')};
+	color: ${props => (props.darkMode ? 'white' : 'black')};
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+`

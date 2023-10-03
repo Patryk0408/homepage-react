@@ -8,6 +8,7 @@ import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
 import homepageReducer from './Homepage/homepageSlice'
 import { createRoot } from 'react-dom/client'
+import { ThemeProvider as ThemeContextProvider } from './Homepage/ThemeContext'
 
 const store = configureStore({
 	reducer: {
@@ -20,8 +21,10 @@ root.render(
 	<React.StrictMode>
 		<Provider store={store}>
 			<ThemeProvider theme={theme}>
-				<GlobalStyle />
-				<App />
+				<ThemeContextProvider>
+					<GlobalStyle />
+					<App />
+				</ThemeContextProvider>
 			</ThemeProvider>
 		</Provider>
 	</React.StrictMode>
