@@ -15,8 +15,8 @@ const Tile = ({ name }) => {
 			<Description>
 				<Span>This is</Span>
 				<Title>{name}</Title>
-				<Paragraph>👨🏻‍💻 I'm a passionate Web Developer in love with Java Script.</Paragraph>
-				<Link href='mailto:patryk.krwaczyk.it@gmail.com'>
+				<Paragraph darkMode={darkMode}>👨🏻‍💻 I'm a passionate Web Developer in love with Java Script.</Paragraph>
+				<Link href='mailto:patryk.krwaczyk.it@gmail.com' darkMode={darkMode}>
 					<MailIcon />
 					Hire me
 				</Link>

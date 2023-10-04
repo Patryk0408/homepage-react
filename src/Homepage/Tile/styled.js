@@ -47,7 +47,7 @@ export const Title = styled.h1`
 export const Paragraph = styled.p`
 	max-width: 633px;
 	font-size: 20px;
-	color: ${({ theme }) => theme.color.slateGray};
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
 	margin: 0 0 35px 0;
 `
 
@@ -59,7 +59,7 @@ export const Span = styled.span`
 
 export const Link = styled.a`
 	padding: 12px 16px;
-	background-color: ${({ theme }) => theme.color.cornflowerBlue};
+	background-color: ${props => (props.darkMode ? `#2188FF` : `#0366d6`)};
 	color: ${({ theme }) => theme.color.white};
 	text-decoration: none;
 	display: flex;
@@ -67,12 +67,19 @@ export const Link = styled.a`
 	align-items: center;
 	gap: 16px;
 	border-radius: 4px;
-	border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.3));
+	border: 1px solid
+		${props =>
+			props.darkMode
+				? `var(--semi-grey, rgba(209, 213, 218, 0.10))`
+				: `var(--diff-bg-neutral, rgba(209, 213, 218, 0.3))`};
 	font-size: 18px;
 	transition: box-shadow 0.2s;
 
 	&:focus {
-		box-shadow: -2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff, -2px 2px 0px 0px #8cc2ff, 2px -2px 0px 0px #8cc2ff;
+		box-shadow: ${props =>
+			props.darkMode
+				? `-2px -2px 0px 0px #6D93BE, 2px 2px 0px 0px #6D93BE, -2px 2px 0px 0px #6D93BE, 2px -2px 0px 0px #6D93BE`
+				: `-2px -2px 0px 0px #8cc2ff, 2px 2px 0px 0px #8cc2ff, -2px 2px 0px 0px #8cc2ff, 2px -2px 0px 0px #8cc2ff`};
 	}
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
@@ -86,4 +93,7 @@ export const ToggleButton = styled.button`
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
+	height: 50px;
+	width: 50px;
+	position: absolute;
 `

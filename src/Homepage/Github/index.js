@@ -14,8 +14,11 @@ import {
 import Loader from '../States/Loader'
 import Error from '../States/Error'
 import { useApiGithub } from '../useApiGithub'
+import { useTheme } from '../ThemeContext'
 
 const Github = () => {
+	const { darkMode } = useTheme()
+
 	const { githubProjects, isLoading, error } = useApiGithub()
 
 	const sortedProjects = githubProjects
@@ -36,22 +39,22 @@ const Github = () => {
 			) : error ? (
 				<Error />
 			) : (
-				<Projects>
+				<Projects darkMode={darkMode}>
 					{sortedProjects.map(project => (
-						<Project key={project.id}>
-							<Name>{project.name}</Name>
+						<Project key={project.id} darkMode={darkMode}>
+							<Name darkMode={darkMode}>{project.name}</Name>
 							<Description>{project.description}</Description>
 							{project.homepage ? (
 								<LinkToGh>
 									<Short>Demo:&nbsp;</Short>
-									<LinkGh href={project.homepage} target='_blank'>
+									<LinkGh href={project.homepage} target='_blank' darkMode={darkMode}>
 										{project.homepage}
 									</LinkGh>
 								</LinkToGh>
 							) : null}
 							<LinkToGh>
 								<Short>Code:&nbsp;</Short>
-								<LinkGh href={project.html_url} target='_blank'>
+								<LinkGh href={project.html_url} target='_blank' darkMode={darkMode}>
 									{project.html_url}
 								</LinkGh>
 							</LinkToGh>

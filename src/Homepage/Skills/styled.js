@@ -12,7 +12,7 @@ export const Title = styled.h2`
 
 export const Wrapper = styled.div`
 	width: 100%;
-	background-color: ${({ theme }) => theme.color.white};
+	background-color: ${props => (props.darkMode ? `var(--Semi-dark, rgba(54, 54, 54, 0.72))` : `#FFFFFF`)};
 	padding: 32px;
 	margin: 0 0 50px;
 	border-radius: 4px;

@@ -2,8 +2,11 @@ import { Title, Wrapper, SkillsList, Skill } from './styled'
 import mySkills from '../../my-skills.json'
 import whatNext from '../../next-skills.json'
 import { ReactComponent as ListStyle } from '../img/Ellipse 31.svg'
+import { useTheme } from '../ThemeContext'
 
 const Skills = ({ skillsTitle, skills }) => {
+	const { darkMode } = useTheme()
+
 	let skillsData
 
 	if (skills === 'my skills') {
@@ -14,7 +17,7 @@ const Skills = ({ skillsTitle, skills }) => {
 
 	return (
 		<>
-			<Wrapper>
+			<Wrapper darkMode={darkMode}>
 				<Title>{skillsTitle}</Title>
 				<SkillsList>
 					{skillsData.map(skill => (

@@ -10,7 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--bg-light-mode, #FBFBFE);
+        background: var(--bg-light-mode,  ${props => (props.darkMode ? '#252525' : '#FBFBFE')});
+        color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
         font-family: Inter;
         font-style: normal;
         line-height: normal;
