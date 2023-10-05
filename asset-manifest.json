@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/homepage-react/static/js/main.cc2e0ea5.js",
+    "main.js": "/homepage-react/static/js/main.b8a179e2.js",
     "static/js/787.ed490093.chunk.js": "/homepage-react/static/js/787.ed490093.chunk.js",
     "static/media/patryk-k.jpg": "/homepage-react/static/media/patryk-k.2aa5e4dc50ef424d0a68.jpg",
     "static/media/Instagram.svg": "/homepage-react/static/media/Instagram.74575ffbddbc816213e60c3ebc0a820a.svg",
@@ -11,11 +11,12 @@
     "static/media/LinkedIN.svg": "/homepage-react/static/media/LinkedIN.2df5150382a175e0f65b5072583ec943.svg",
     "static/media/Message.svg": "/homepage-react/static/media/Message.a2a199c0ca8e4fce475622ee0ec5b0a9.svg",
     "static/media/Facebook.svg": "/homepage-react/static/media/Facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
+    "static/media/icon-spinner.svg": "/homepage-react/static/media/icon-spinner.78bed2396a4528e47c1ff75f7649750b.svg",
     "static/media/Ellipse 31.svg": "/homepage-react/static/media/Ellipse 31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.cc2e0ea5.js.map": "/homepage-react/static/js/main.cc2e0ea5.js.map",
+    "main.b8a179e2.js.map": "/homepage-react/static/js/main.b8a179e2.js.map",
     "787.ed490093.chunk.js.map": "/homepage-react/static/js/787.ed490093.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.cc2e0ea5.js"
+    "static/js/main.b8a179e2.js"
   ]
 }
