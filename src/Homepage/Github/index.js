@@ -32,8 +32,8 @@ const Github = () => {
 	return (
 		<Wrapper>
 			<GithubIcon />
-			<Title>Portfolio</Title>
-			<Paragraph>My recent projects</Paragraph>
+			<Title darkMode={darkMode}>Portfolio</Title>
+			<Paragraph darkMode={darkMode}>My recent projects</Paragraph>
 			{isLoading ? (
 				<Loader />
 			) : error ? (

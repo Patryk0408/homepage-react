@@ -17,6 +17,8 @@ export const Wrapper = styled.div`
 	margin: 0 0 50px;
 	border-radius: 4px;
 	box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
+	transition: 0.2s;
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		margin: 0 0 72px;

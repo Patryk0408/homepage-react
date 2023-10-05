@@ -11,6 +11,8 @@ export const Paragraph = styled.p`
 	font-size: 20px;
 	margin: 0 0 24px;
 	text-align: center;
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
+	transition: 0.2s;
 `
 
 export const GithubIcon = styled(Icon)`
@@ -20,6 +22,8 @@ export const GithubIcon = styled(Icon)`
 export const Title = styled.h2`
 	text-align: center;
 	margin: 12px 0 8px;
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
+	transition: 0.2s;
 `
 
 export const Projects = styled.div`
@@ -35,6 +39,7 @@ export const Projects = styled.div`
 	font-weight: 400;
 	line-height: 140%;
 	letter-spacing: 0.9px;
+
 	@media (min-width: ${({ theme }) => theme.breakpoint.laptop}) {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 32px;
@@ -80,6 +85,7 @@ export const Name = styled.span`
 	line-height: normal;
 	letter-spacing: 0.8px;
 	margin: 0 0 24px;
+	transition: 0.2s;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 24px;
@@ -109,6 +115,7 @@ export const LinkGh = styled.a`
 	color: ${props => (props.darkMode ? `#2188FF` : `#0366d6`)};
 	word-break: break-all;
 	margin-bottom: 8px;
+	transition: 0.2s;
 
 	&:focus {
 		opacity: 0.8;

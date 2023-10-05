@@ -13,8 +13,8 @@ const Tile = ({ name }) => {
 			</ToggleButton>
 			<MyPhoto src={myImage} alt='Patryk Krawczyk' height='398' width='398' />
 			<Description>
-				<Span>This is</Span>
-				<Title>{name}</Title>
+				<Span darkMode={darkMode}>This is</Span>
+				<Title darkMode={darkMode}>{name}</Title>
 				<Paragraph darkMode={darkMode}>👨🏻‍💻 I'm a passionate Web Developer in love with Java Script.</Paragraph>
 				<Link href='mailto:patryk.krwaczyk.it@gmail.com' darkMode={darkMode}>
 					<MailIcon />

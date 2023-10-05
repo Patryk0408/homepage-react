@@ -37,6 +37,8 @@ export const Title = styled.h1`
 	margin: 8px 0 16px;
 	font-size: 22px;
 	font-weight: 900;
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
+	transition: 0.2s;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 38px;
@@ -49,12 +51,14 @@ export const Paragraph = styled.p`
 	font-size: 20px;
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
 	margin: 0 0 35px 0;
+	transition: 0.2s;
 `
 
 export const Span = styled.span`
 	font-size: 12px;
 	text-transform: uppercase;
-	color: ${({ theme }) => theme.color.slateGray};
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
+	transition: 0.2s;
 `
 
 export const Link = styled.a`
@@ -67,6 +71,7 @@ export const Link = styled.a`
 	align-items: center;
 	gap: 16px;
 	border-radius: 4px;
+	transition: 0.2s;
 	border: 1px solid
 		${props =>
 			props.darkMode
@@ -96,4 +101,5 @@ export const ToggleButton = styled.button`
 	height: 50px;
 	width: 50px;
 	position: absolute;
+	transition: 0.2s;
 `

@@ -20,13 +20,14 @@ export const Description = styled.div`
 `
 
 export const Talk = styled.span`
-	color: ${({ theme }) => theme.color.slateGray};
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
 	font-family: Inter;
 	font-size: 12px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 130%;
 	text-transform: uppercase;
+	transition: 0.2s;
 `
 
 export const Mail = styled.a`
@@ -39,7 +40,7 @@ export const Mail = styled.a`
 	letter-spacing: 1.6px;
 	text-decoration: none;
 	width: fit-content;
-	transition: color 0.2s;
+	transition: 0.2s;
 
 	&:hover {
 		color: ${props => (props.darkMode ? `#2188FF` : `#0366d6`)};
@@ -57,6 +58,8 @@ export const About = styled.span`
 	line-height: normal;
 	letter-spacing: 0.7px;
 	word-break: initial;
+	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
+	transition: 0.2s;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 18px;
@@ -75,6 +78,7 @@ export const SocialWrapper = styled.div`
 `
 
 export const Image = styled.img`
+	transition: 0.2s;
 	filter: ${props =>
 		props.darkMode ? `invert(100%) sepia(4%) saturate(2%) hue-rotate(85deg) brightness(103%) contrast(101%);` : ``};
 	&:focus {
