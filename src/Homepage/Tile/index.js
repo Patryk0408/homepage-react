@@ -9,7 +9,7 @@ const Tile = ({ name }) => {
 	return (
 		<Wrapper>
 			<ToggleButton darkMode={darkMode} onClick={toggleTheme}>
-				{darkMode ? 'Switch to Light Theme' : 'Switch to Dark Theme'}
+				Dark mode {darkMode ? 'on' : 'off'}
 			</ToggleButton>
 			<MyPhoto src={myImage} alt='Patryk Krawczyk' height='398' width='398' />
 			<Description>

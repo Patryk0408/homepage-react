@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
 	width: 100%;
 	margin: 32px 0 63px;
 	display: grid;
+	position: relative;
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		grid-template-columns: auto 1fr;
@@ -93,13 +94,12 @@ export const Link = styled.a`
 `
 
 export const ToggleButton = styled.button`
-	background-color: ${props => (props.darkMode ? 'black' : 'white')};
 	color: ${props => (props.darkMode ? 'white' : 'black')};
 	border: none;
 	padding: 10px 20px;
 	cursor: pointer;
-	height: 50px;
-	width: 50px;
 	position: absolute;
 	transition: 0.2s;
+	background-color: transparent;
+	right: 0;
 `
