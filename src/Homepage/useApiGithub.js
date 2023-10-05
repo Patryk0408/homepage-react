@@ -18,7 +18,7 @@ export const useApiGithub = () => {
 					const response = await axios.get('https://api.github.com/users/Patryk0408/repos')
 					setGithubProjects(response.data)
 					setIsLoading(false)
-				}, 1000)
+				}, 100000000)
 			} catch (error) {
 				console.error('Something went wrong', error)
 				setError('Something went wrong while fetching data.')

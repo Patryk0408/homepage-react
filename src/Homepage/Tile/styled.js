@@ -102,4 +102,5 @@ export const ToggleButton = styled.button`
 	transition: 0.2s;
 	background-color: transparent;
 	right: 0;
+	-webkit-tap-highlight-color: transparent !important;
 `
