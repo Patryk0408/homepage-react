@@ -25,12 +25,14 @@
 	{ "id": "24", "skill": "Yarn" },
 	{ "id": "25", "skill": "Git" },
 	{ "id": "26", "skill": "GitHub" },
-	{ "id": "27", "skill": "Docker" },
-	{ "id": "28", "skill": "Presta Shop" },
-	{ "id": "29", "skill": "Wodrpress" },
-	{ "id": "30", "skill": "Shoper" },
-	{ "id": "31", "skill": "Smarty" },
-	{ "id": "32", "skill": "Twig" },
-	{ "id": "33", "skill": "PHP" },
-	{ "id": "34", "skill": "Bootstrap" }
+	{ "id": "27", "skill": "Bitbucket" },
+	{ "id": "28", "skill": "Docker" },
+	{ "id": "29", "skill": "Presta Shop" },
+	{ "id": "30", "skill": "Wodrpress" },
+	{ "id": "31", "skill": "Shoper" },
+	{ "id": "32", "skill": "Smarty" },
+	{ "id": "33", "skill": "Twig" },
+	{ "id": "34", "skill": "PHP" },
+	{ "id": "35", "skill": "Python" },
+	{ "id": "36", "skill": "Bootstrap" }
 ]
