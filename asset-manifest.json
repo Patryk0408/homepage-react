@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/homepage-react/static/js/main.65c0971c.js",
+    "main.js": "/homepage-react/static/js/main.13ca90ab.js",
     "static/js/787.ed490093.chunk.js": "/homepage-react/static/js/787.ed490093.chunk.js",
     "static/media/patryk-k.jpg": "/homepage-react/static/media/patryk-k.2aa5e4dc50ef424d0a68.jpg",
     "static/media/Instagram.svg": "/homepage-react/static/media/Instagram.74575ffbddbc816213e60c3ebc0a820a.svg",
@@ -13,10 +13,10 @@
     "static/media/Facebook.svg": "/homepage-react/static/media/Facebook.7ad73f7f0f6847e1bd962e60f8c11086.svg",
     "static/media/icon-spinner.svg": "/homepage-react/static/media/icon-spinner.78bed2396a4528e47c1ff75f7649750b.svg",
     "static/media/Ellipse 31.svg": "/homepage-react/static/media/Ellipse 31.68407598b5fb839af5aec77b06100eb5.svg",
-    "main.65c0971c.js.map": "/homepage-react/static/js/main.65c0971c.js.map",
+    "main.13ca90ab.js.map": "/homepage-react/static/js/main.13ca90ab.js.map",
     "787.ed490093.chunk.js.map": "/homepage-react/static/js/787.ed490093.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.65c0971c.js"
+    "static/js/main.13ca90ab.js"
   ]
 }
