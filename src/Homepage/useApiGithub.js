@@ -12,18 +12,17 @@ export const useApiGithub = () => {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			try {
-				dispatch(setStatus('loading'))
-				setTimeout(async () => {
+			dispatch(setStatus('loading'))
+			setTimeout(async () => {
+				try {
 					const response = await axios.get('https://api.github.com/users/Patryk0408/repos')
 					setGithubProjects(response.data)
 					setIsLoading(false)
-				}, 100000000)
-			} catch (error) {
-				console.error('Something went wrong', error)
-				setError('Something went wrong while fetching data.')
-				setIsLoading(false)
-			}
+				} catch (error) {
+					setError('Something went wrong while fetching data.')
+					setIsLoading(false)
+				}
+			}, 2000)
 		}
 
 		fetchData()

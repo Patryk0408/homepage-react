@@ -24,4 +24,14 @@ export const Title = styled.h2`
 export const Image = styled.img`
 	display: block;
 	margin: 0 auto;
+	animation: rotate 2s linear infinite;
+
+	@keyframes rotate {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
 `
