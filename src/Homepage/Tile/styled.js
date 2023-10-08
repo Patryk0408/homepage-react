@@ -96,7 +96,8 @@ export const Link = styled.a`
 export const ToggleButton = styled.button`
 	color: ${props => (props.darkMode ? 'white' : 'black')};
 	border: none;
-	padding: 10px 20px;
+	width: 120px;
+	text-align: left;
 	cursor: pointer;
 	position: absolute;
 	transition: 0.2s;
