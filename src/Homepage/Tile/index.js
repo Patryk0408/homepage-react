@@ -1,6 +1,20 @@
-import { Wrapper, MyPhoto, Description, Title, Paragraph, Span, Link, ToggleButton } from './styled'
+import {
+	Wrapper,
+	MyPhoto,
+	Description,
+	Title,
+	Paragraph,
+	Span,
+	Link,
+	ToggleButton,
+	IconWrapper,
+	StyledSun,
+	BgWrapper,
+	SpanText,
+} from './styled'
 import myImage from '../img/patryk-k.jpg'
 import { ReactComponent as MailIcon } from '../img/Message.svg'
+import { ReactComponent as BgImage } from '../img/bg.svg'
 import { useTheme } from '../ThemeContext'
 
 const Tile = ({ name }) => {
@@ -9,7 +23,13 @@ const Tile = ({ name }) => {
 	return (
 		<Wrapper>
 			<ToggleButton darkMode={darkMode} onClick={toggleTheme}>
-				Dark mode {darkMode ? 'on' : 'off'}
+				<SpanText>Dark mode {darkMode ? 'on' : 'off'}</SpanText>
+				<IconWrapper>
+					<BgWrapper>
+						<BgImage />
+					</BgWrapper>
+					<StyledSun darkMode={darkMode} />
+				</IconWrapper>
 			</ToggleButton>
 			<MyPhoto src={myImage} alt='Patryk Krawczyk' height='398' width='398' />
 			<Description>

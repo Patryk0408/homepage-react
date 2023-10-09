@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { ReactComponent as Sun } from '../img/brightness.svg'
 
 export const Wrapper = styled.div`
 	width: 100%;
@@ -96,7 +97,7 @@ export const Link = styled.a`
 export const ToggleButton = styled.button`
 	color: ${props => (props.darkMode ? 'white' : 'black')};
 	border: none;
-	width: 120px;
+
 	text-align: left;
 	cursor: pointer;
 	position: absolute;
@@ -104,4 +105,42 @@ export const ToggleButton = styled.button`
 	background-color: transparent;
 	right: 0;
 	-webkit-tap-highlight-color: transparent !important;
+	display: flex;
+	font-size: 12px;
+	gap: 12px;
+	justify-content: end;
+	align-items: center;
+	padding: 0;
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		justify-content: space-between;
+		width: 155px;
+	}
+`
+
+export const IconWrapper = styled.div`
+	position: relative;
+`
+
+export const StyledSun = styled(Sun)`
+	background-color: #6e7e91;
+	padding: 3px;
+	height: 17px;
+	width: 17px;
+	border-radius: 10px;
+	position: absolute;
+	top: 5.5px;
+	left: ${props => (props.darkMode ? '28px' : '5px')};
+	transition: all 0.2s ease-in-out;
+`
+
+export const BgWrapper = styled.div`
+	position: relative;
+	width: fit-content;
+`
+
+export const SpanText = styled.span`
+	display: none;
+	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
+		display: block;
+	}
 `
