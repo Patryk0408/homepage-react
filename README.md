@@ -1,4 +1,4 @@
-# [Patryk Krawczyk - Web Developer](https://patryk0408.github.io/homepage-react/){:target="_blank"}
+# [Patryk Krawczyk - Web Developer](https://patryk0408.github.io/homepage-react/)
 
 ## Short about me
 
