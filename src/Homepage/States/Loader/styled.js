@@ -10,7 +10,7 @@ export const Title = styled.h2`
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#252525`)};
 	text-align: center;
 	font-family: Inter;
-	font-size: 20px;
+	font-size: ${({ theme }) => theme.font.font20};
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%;

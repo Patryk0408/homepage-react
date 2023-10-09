@@ -40,7 +40,7 @@ export const Title = styled.h1`
 	font-size: 22px;
 	font-weight: 900;
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
 		font-size: 38px;
@@ -50,17 +50,17 @@ export const Title = styled.h1`
 
 export const Paragraph = styled.p`
 	max-width: 633px;
-	font-size: 20px;
+	font-size: ${({ theme }) => theme.font.font20};
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
 	margin: 0 0 35px 0;
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 `
 
 export const Span = styled.span`
-	font-size: 12px;
+	font-size: ${({ theme }) => theme.font.font12};
 	text-transform: uppercase;
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#6E7E91`)};
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 `
 
 export const Link = styled.a`
@@ -73,14 +73,10 @@ export const Link = styled.a`
 	align-items: center;
 	gap: 16px;
 	border-radius: 4px;
-	transition: 0.2s;
-	border: 1px solid
-		${props =>
-			props.darkMode
-				? `var(--semi-grey, rgba(209, 213, 218, 0.10))`
-				: `var(--diff-bg-neutral, rgba(209, 213, 218, 0.3))`};
-	font-size: 18px;
-	transition: box-shadow 0.2s;
+	transition: ${({ theme }) => theme.time.default};
+	border: 1px solid ${props => (props.darkMode ? `rgba(209, 213, 218, 0.10)` : `rgba(209, 213, 218, 0.3)`)};
+	font-size: ${({ theme }) => theme.font.font18};
+	transition: box-shadow ${({ theme }) => theme.time.default};
 
 	&:focus {
 		box-shadow: ${props =>
@@ -90,23 +86,22 @@ export const Link = styled.a`
 	}
 
 	@media (min-width: ${({ theme }) => theme.breakpoint.tablet}) {
-		font-size: 20px;
+		font-size: ${({ theme }) => theme.font.font20};
 	}
 `
 
 export const ToggleButton = styled.button`
 	color: ${props => (props.darkMode ? 'white' : 'black')};
 	border: none;
-
 	text-align: left;
 	cursor: pointer;
 	position: absolute;
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 	background-color: transparent;
 	right: 0;
 	-webkit-tap-highlight-color: transparent !important;
 	display: flex;
-	font-size: 12px;
+	font-size: ${({ theme }) => theme.font.font12};
 	gap: 12px;
 	justify-content: end;
 	align-items: center;
@@ -130,12 +125,13 @@ export const StyledSun = styled(Sun)`
 	position: absolute;
 	top: 5.5px;
 	left: ${props => (props.darkMode ? '28px' : '5px')};
-	transition: all 0.2s ease-in-out;
+	transition: all ${({ theme }) => theme.time.default} ease-in-out;
 `
 
 export const BgWrapper = styled.div`
 	position: relative;
 	width: fit-content;
+	height: 28px;
 `
 
 export const SpanText = styled.span`

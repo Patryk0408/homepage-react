@@ -10,10 +10,10 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background: var(--bg-light-mode,  ${props => (props.darkMode ? '#252525' : '#FBFBFE')});
+        background: ${props => (props.darkMode ? '#252525' : '#FBFBFE')};
         font-family: Inter;
         font-style: normal;
         line-height: normal;
-        transition: 0.2s;
+        transition: ${({ theme }) => theme.time.default};
     }
 `

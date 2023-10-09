@@ -4,7 +4,7 @@ export const Message = styled.div`
 	max-width: 410px;
 	margin: 0 auto;
 	text-align: center;
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 	color: ${props => (props.darkMode ? `#FFFFFF` : `#000000`)};
 `
 
@@ -16,7 +16,7 @@ export const Title = styled.h2`
 export const Info = styled.span`
 	display: block;
 	font-family: Inter;
-	font-size: 20px;
+	font-size: ${({ theme }) => theme.font.font20};
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%; /* 28px */
@@ -26,7 +26,7 @@ export const Info = styled.span`
 export const Image = styled.img`
 	display: block;
 	margin: 64px auto 0;
-	transition: 0.2s;
+	transition: ${({ theme }) => theme.time.default};
 
 	${props =>
 		props.darkMode
@@ -50,8 +50,8 @@ export const Button = styled.a`
 	background: ${props => (props.darkMode ? `#2188FF` : `#0366D6`)};
 	width: fit-content;
 	border-radius: 4px;
-	border: 1px solid var(--semi-grey, rgba(209, 213, 218, 0.1));
-	transition: 0.2s;
+	border: 1px solid rgba(209, 213, 218, 0.1);
+	transition: ${({ theme }) => theme.time.default};
 
 	&:focus {
 		box-shadow: ${props =>
