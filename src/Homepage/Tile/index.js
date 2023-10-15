@@ -35,7 +35,7 @@ const Tile = ({ name }) => {
 			<Description>
 				<Span darkMode={darkMode}>This is</Span>
 				<Title darkMode={darkMode}>{name}</Title>
-				<Paragraph darkMode={darkMode}>👨🏻‍💻 I'm a passionate Web Developer in love with Java Script.</Paragraph>
+				<Paragraph darkMode={darkMode}>👨🏻‍💻 I'm a passionate Web Developer in love with JavaScript.</Paragraph>
 				<Link href='mailto:patryk.krwaczyk.it@gmail.com' darkMode={darkMode}>
 					<MailIcon />
 					Hire me
